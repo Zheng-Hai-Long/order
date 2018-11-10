@@ -12,28 +12,38 @@ import java.util.Date;
  */
 @Data
 @Entity
-public class OrderDeatil {
+public class ProductInfo {
 
     @Id
-    private String detailId;
-    private String orderId;
     private String productId;
     /**
-     * '商品名称'
+     * 商品名称
      */
     private String productName;
     /**
-     * 当前价格,单位分
+     * 单价
      */
     private BigDecimal productPrice;
     /**
-     * 数量
+     * 库存
      */
-    private Integer productQuantity;
+    private Integer productStock;
+    /**
+     * 描述
+     */
+    private String productDescription;
     /**
      * 小图
      */
     private String productIcon;
+    /**
+     * 商品状态,0正常1下架
+     */
+    private Integer productStatus;
+    /**
+     * 类目编号
+     */
+    private Integer categoryType;
     /**
      * 创建时间
      */
@@ -42,4 +52,6 @@ public class OrderDeatil {
      * 修改时间
      */
     private Date updateTime;
+
+
 }

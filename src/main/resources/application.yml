@@ -15,3 +15,7 @@ spring:
       url: jdbc:mysql://127.0.0.1:3306/spring_cloud_sell?characterEncoding=utf-8&useSSL=false
   jpa:
     show-sql: true
+#改变ribbon负载均衡的机制
+#product:
+#  ribbon:
+#   NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
