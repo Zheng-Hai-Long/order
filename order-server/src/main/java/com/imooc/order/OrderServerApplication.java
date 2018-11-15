@@ -8,9 +8,8 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableFeignClients
-public class OrderApplication {
-
-	public static void main(String[] args) {
-		SpringApplication.run(OrderApplication.class, args);
-	}
+public class OrderServerApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(OrderServerApplication.class, args);
+    }
 }
