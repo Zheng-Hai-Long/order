@@ -7,7 +7,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-@EnableFeignClients
+@EnableFeignClients(basePackages = "com.imooc.product.client")
 public class OrderServerApplication {
     public static void main(String[] args) {
         SpringApplication.run(OrderServerApplication.class, args);
